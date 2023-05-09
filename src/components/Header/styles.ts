@@ -34,8 +34,7 @@ export const useStyles = makeStyles({
         border: '1px solid #FFF',
         padding: '12px',
         '&:hover': {
-            backgroundColor: '#FFF',
-            color: '#000',
+            backgroundColor: 'rgba(0, 0, 0, 0.9)'
         },
     },
 
@@ -50,8 +49,7 @@ export const useStyles = makeStyles({
         marginLeft: '16px',
 
         '&:hover': {
-            background: 'transparent',
-            color: '#FFF'
+            background: 'rgba(255, 255, 255, 0.9)'
         }
     }
 })
