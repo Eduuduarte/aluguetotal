@@ -2,15 +2,9 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles({
     appBar: {
-        height: "82px", 
-        backgroundColor: "#000000", 
-        display: 'flex', 
-        justifyContent: 'center', 
-        alignItems: 'center', 
-        gap: '140px', 
-        flexDirection: 'row'
+        backgroundColor: "#000000",
+        position: 'relative',
     },
-
     title: {
         fontSize: '32px',
         fontWeight: 700, 

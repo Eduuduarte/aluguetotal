@@ -14,8 +14,8 @@ export default function Home() {
       <Header />
       <SectionOne />
       <SectionTwo />
-      <SectionThree />
-      <SectionFour />
+      {/* <SectionThree /> */}
+      {/* <SectionFour /> */}
 
     </>
 

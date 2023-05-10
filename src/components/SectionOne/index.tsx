@@ -8,15 +8,15 @@ export const SectionOne = () => {
 
     return (
         <>
-            <Box sx={{ backgroundImage: 'url(Fundo.png)', backgroundSize: 'fill', height: 'auto' }}>
-                <Box height="100vh" sx={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', color: "#FFF", display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-                    <Typography className={classes.title}>
-                        Aumente a eficiência da gestão de seus <br/> imóveis e maximize seus resultados.
+            <Box className={classes.container}>
+                <Box className={classes.main} >
+                    <Typography className={classes.title} sx={{ fontSize: { xs: '30px', sm: '60px' } }}>
+                        Aumente a eficiência da gestão de seus imóveis e maximize seus resultados.
                     </Typography>
-                    <Typography className={classes.subTitle}>
-                    Nosso sistema de gestão de imóveis oferece recursos avançados, suporte técnico especializado e uma interface amigável,
-                    <br/> permitindo que você gerencie seus imóveis com facilidade e eficiência. Comece agora e descubra 
-                    <br/> como podemos ajudá-lo a alcançar seus objetivos de gestão imobiliária.
+                    <Typography className={classes.subTitle} sx={{ fontSize: { xs: '12px', sm: '20px' } }}>
+                        Nosso sistema de gestão de imóveis oferece recursos avançados, suporte técnico especializado e uma interface amigável,
+                        permitindo que você gerencie seus imóveis com facilidade e eficiência. Comece agora e descubra
+                        como podemos ajudá-lo a alcançar seus objetivos de gestão imobiliária.
                     </Typography>
                     <Button className={classes.button}>Cadastre-se já</Button>
                 </Box>

@@ -1,13 +1,18 @@
-import { Box, Divider, Drawer, List, ListItem, ListItemButton, ListItemText, Typography } from "@mui/material"
+import { Box, Button, Divider, Drawer, List, ListItem, ListItemButton, ListItemText, Typography } from "@mui/material"
 import Link from "next/link";
+import { useStyles } from "./styles";
 
 type Props = {
     open: boolean;
     title: string;
     onClose: () => void;
+    clickCadastro: () => void;
+    clickEntrar: () => void;
 }
 
-export const HeaderDrawer = ({ open, onClose, title }: Props) => {
+export const HeaderDrawer = ({ open, onClose, title, clickCadastro, clickEntrar }: Props) => {
+    const classes = useStyles();
+
     return (
         <Drawer
             variant="temporary"
@@ -60,6 +65,10 @@ export const HeaderDrawer = ({ open, onClose, title }: Props) => {
                     </ListItem>
                 </List>
             </Box>
+            <Box sx={{ display: "flex", flexDirection: 'column', justifyContent: 'center', margin: '12px 0' }}>
+                        <Button onClick={clickCadastro} className={classes.buttonT}>Cadastre-se já</Button>
+                        <Button onClick={clickEntrar} className={classes.buttonB}>Entrar</Button>
+                    </Box>
         </Drawer>
     )
 }
