@@ -12,24 +12,26 @@ export const SectionThree = () => {
     const classes = useStyles();
 
     const handleGetAccess = () => {
-        
+
     }
 
     return (
         <>
             <Box className={classes.container}>
-                <Typography component='h3' variant="h3" color="#FFF" sx={{ marginTop: '146px' }}>Como nós trabalhamos</Typography>
-                <Typography component='h5' variant="h5" color="#FFF" sx={{ marginBottom: '146px' }}>São três pequenos passos</Typography>
+                <Typography component='h3' variant="h3" color="#FFF" sx={{ marginTop: '146px', fontSize: {xs: '22px', sm: '40px'} }}>Como nós trabalhamos</Typography>
+                <Typography component='h5' variant="h5" color="#FFF" sx={{ marginBottom: '146px', fontSize: {xs: '18px', sm: '32px'} }}>São três pequenos passos</Typography>
                 <Typography></Typography>
                 <Box className={classes.boxSection}>
-                    <Box className={classes.boxDialog}>
-                        <Typography className={classes.boxDialogCircle}>1</Typography>
-                        <Box className={classes.boxDialogText}>
-                            <Typography className={classes.boxDialogTitle}>Browse</Typography>
-                            <Typography className={classes.boxDialogSubTitle}>Browse the Here marketplace for
-                                available properties that fit your
-                                investment criteria.
-                            </Typography>
+                    <Box className={classes.boxDialog} sx={{ flexDirection: { xs: 'column', sm: 'row' } }}>
+                        <Box className={classes.boxDialogSide}>
+                            <Typography className={classes.boxDialogCircle}>1</Typography>
+                            <Box className={classes.boxDialogText}>
+                                <Typography className={classes.boxDialogTitle}>Browse</Typography>
+                                <Typography className={classes.boxDialogSubTitle}>Browse the Here marketplace for
+                                    available properties that fit your
+                                    investment criteria.
+                                </Typography>
+                            </Box>
                         </Box>
                         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                             <Image src={Browse} alt="" height={200} />
@@ -37,32 +39,36 @@ export const SectionThree = () => {
                     </Box>
                 </Box>
                 <Box className={classes.boxSection}>
-                    <Box className={classes.boxDialog}>
+                    <Box className={classes.boxDialog} sx={{ flexDirection: { xs: 'column-reverse', sm: 'row' } }}>
                         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                             <Image src={Invest} alt="" height={200} />
                         </Box>
-                        <Typography className={classes.boxDialogCircle}>2</Typography>
-                        <Box className={classes.boxDialogText}>
-                            <Typography className={classes.boxDialogTitle}>Invest</Typography>
-                            <Typography className={classes.boxDialogSubTitle}>Determine how much you’d like to
-                                invest, review the terms, sign
-                                electronically and fund your
-                                investment.
-                            </Typography>
+                        <Box className={classes.boxDialogSide}>
+                            <Typography className={classes.boxDialogCircle}>2</Typography>
+                            <Box className={classes.boxDialogText}>
+                                <Typography className={classes.boxDialogTitle}>Invest</Typography>
+                                <Typography className={classes.boxDialogSubTitle}>Determine how much you’d like to
+                                    invest, review the terms, sign
+                                    electronically and fund your
+                                    investment.
+                                </Typography>
+                            </Box>
                         </Box>
                     </Box>
                 </Box>
                 <Box className={classes.boxSection}>
-                    <Box className={classes.boxDialog}>
-                        <Typography className={classes.boxDialogCircle}>3</Typography>
-                        <Box className={classes.boxDialogText}>
-                            <Typography className={classes.boxDialogTitle}>Relax</Typography>
-                            <Typography className={classes.boxDialogSubTitle}>Determine how much you’d like to
-                                We’ll take care of the day-to-day. You
-                                sit back and earn your share of net
-                                monthly income and potential
-                                property appreciation.
-                            </Typography>
+                    <Box className={classes.boxDialog} sx={{ flexDirection: { xs: 'column', sm: 'row' } }}>
+                        <Box className={classes.boxDialogSide}>
+                            <Typography className={classes.boxDialogCircle}>3</Typography>
+                            <Box className={classes.boxDialogText}>
+                                <Typography className={classes.boxDialogTitle}>Relax</Typography>
+                                <Typography className={classes.boxDialogSubTitle}>Determine how much you’d like to
+                                    We’ll take care of the day-to-day. You
+                                    sit back and earn your share of net
+                                    monthly income and potential
+                                    property appreciation.
+                                </Typography>
+                            </Box>
                         </Box>
                         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                             <Image src={Relax} alt="" height={200} />

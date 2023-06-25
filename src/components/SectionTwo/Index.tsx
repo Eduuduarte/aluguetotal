@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material"
+import { Box } from "@mui/material"
 import Forbes from '../../../public/forbes.png';
 import Fox from '../../../public/fox.png';
 import Tech from '../../../public/tech.png';
@@ -12,7 +12,6 @@ import { Autoplay } from 'swiper';
 import { Advantage } from "../Advantage";
 
 export const SectionTwo = () => {
-
     const classes = useStyles();
 
     return (
@@ -39,6 +38,7 @@ export const SectionTwo = () => {
                         subTitle="Com uma interface intuitiva e recursos simples de usar, nosso sistema de gestão de imóveis torna o gerenciamento de propriedades fácil e acessível para todos os nossos clientes"
                     />
                 </Box>
+
                 <Box sx={{ display: {xs: 'block'}}}>
                     <Swiper
                         slidesPerView={1}

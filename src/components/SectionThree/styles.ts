@@ -15,7 +15,10 @@ export const useStyles = makeStyles({
     },
     boxDialog: {
         display: 'flex',
-        height: '160px'
+    },
+    boxDialogSide: {
+        display: 'flex', 
+        flexDirection: 'row'
     },
     boxDialogCircle: {
         backgroundColor: '#FFF',
@@ -33,7 +36,6 @@ export const useStyles = makeStyles({
         flexDirection: 'column',
         alignItems: 'flex-start',
         marginLeft: '20px',
-        height: '160px'
     },
     boxDialogTitle: {
         fontSize: '36px',
