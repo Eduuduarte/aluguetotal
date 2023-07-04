@@ -39,7 +39,7 @@ export const SectionTwo = () => {
                     />
                 </Box>
 
-                <Box sx={{ display: {xs: 'block'}}}>
+                <Box sx={{ display: {xs: 'block', sm: 'none'}}}>
                     <Swiper
                         slidesPerView={1}
                         loop={true}

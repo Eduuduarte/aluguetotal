@@ -26,8 +26,6 @@ export const useStyles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '60px',
-        height: '60px',
         borderRadius: '50%',
         fontSize: '24px'
     },

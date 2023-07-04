@@ -18,13 +18,17 @@ export const SectionThree = () => {
     return (
         <>
             <Box className={classes.container}>
-                <Typography component='h3' variant="h3" color="#FFF" sx={{ marginTop: '146px', fontSize: {xs: '22px', sm: '40px'} }}>Como nós trabalhamos</Typography>
-                <Typography component='h5' variant="h5" color="#FFF" sx={{ marginBottom: '146px', fontSize: {xs: '18px', sm: '32px'} }}>São três pequenos passos</Typography>
+                <Typography component='h3' variant="h3" color="#FFF" sx={{ marginTop: '146px', fontSize: { xs: '34px', sm: '40px' } }}>
+                    Como nós trabalhamos
+                </Typography>
+                <Typography component='h5' variant="h5" color="#FFF" sx={{ marginBottom: '146px', fontSize: { xs: '22px', sm: '32px' } }}>
+                    São três pequenos passos
+                </Typography>
                 <Typography></Typography>
                 <Box className={classes.boxSection}>
                     <Box className={classes.boxDialog} sx={{ flexDirection: { xs: 'column', sm: 'row' } }}>
                         <Box className={classes.boxDialogSide}>
-                            <Typography className={classes.boxDialogCircle}>1</Typography>
+                            <Typography className={classes.boxDialogCircle} sx={{ width: { xs: '50px', sm:'60px'}, height: {xs: '50px', sm:'60px'}}}>1</Typography>
                             <Box className={classes.boxDialogText}>
                                 <Typography className={classes.boxDialogTitle}>Browse</Typography>
                                 <Typography className={classes.boxDialogSubTitle}>Browse the Here marketplace for
@@ -44,7 +48,7 @@ export const SectionThree = () => {
                             <Image src={Invest} alt="" height={200} />
                         </Box>
                         <Box className={classes.boxDialogSide}>
-                            <Typography className={classes.boxDialogCircle}>2</Typography>
+                            <Typography className={classes.boxDialogCircle} sx={{ width: { xs: '50px', sm:'60px'}, height: {xs: '50px', sm:'60px'}}}>2</Typography>
                             <Box className={classes.boxDialogText}>
                                 <Typography className={classes.boxDialogTitle}>Invest</Typography>
                                 <Typography className={classes.boxDialogSubTitle}>Determine how much you’d like to
@@ -59,7 +63,7 @@ export const SectionThree = () => {
                 <Box className={classes.boxSection}>
                     <Box className={classes.boxDialog} sx={{ flexDirection: { xs: 'column', sm: 'row' } }}>
                         <Box className={classes.boxDialogSide}>
-                            <Typography className={classes.boxDialogCircle}>3</Typography>
+                            <Typography className={classes.boxDialogCircle} sx={{ width: { xs: '50px', sm:'60px'}, height: {xs: '50px', sm:'60px'}}}>3</Typography>
                             <Box className={classes.boxDialogText}>
                                 <Typography className={classes.boxDialogTitle}>Relax</Typography>
                                 <Typography className={classes.boxDialogSubTitle}>Determine how much you’d like to
